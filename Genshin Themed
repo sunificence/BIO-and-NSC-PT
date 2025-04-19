@@ -1,0 +1,180 @@
+/geologic-time-scale-project
+    /index.html
+    /paleozoic.html
+    /mesozoic.html
+    /cenozoic.html
+    /styles.css
+    /script.js
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geologic Time Scale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Geologic Time Scale</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paleozoic.html">Paleozoic Era</a></li>
+                <li><a href="mesozoic.html">Mesozoic Era</a></li>
+                <li><a href="cenozoic.html">Cenozoic Era</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro">
+        <h2>Welcome to the Geologic Time Scale</h2>
+        <p>Explore the history of Earth from its formation to the present day. Learn about the different eras and the life forms that shaped our planet.</p>
+    </section>
+    <footer>
+        <p>Created by Your Name &copy; 2025</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paleozoic Era</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Paleozoic Era</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paleozoic.html">Paleozoic Era</a></li>
+                <li><a href="mesozoic.html">Mesozoic Era</a></li>
+                <li><a href="cenozoic.html">Cenozoic Era</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="era-info">
+        <h2>Life Forms and Geological Features</h2>
+        <p>The Paleozoic Era, lasting from approximately 541 to 252 million years ago, saw the development of early life forms, including fish, amphibians, and the first land plants. It ended with the largest mass extinction event in Earth’s history.</p>
+    </section>
+    <footer>
+        <p>Created by Your Name &copy; 2025</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesozoic Era</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mesozoic Era</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paleozoic.html">Paleozoic Era</a></li>
+                <li><a href="mesozoic.html">Mesozoic Era</a></li>
+                <li><a href="cenozoic.html">Cenozoic Era</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="era-info">
+        <h2>Life Forms and Geological Features</h2>
+        <p>The Mesozoic Era, from 252 to 66 million years ago, is often called the “Age of Dinosaurs.” It saw the rise of dinosaurs and the first flowering plants, ending with the extinction of dinosaurs.</p>
+    </section>
+    <footer>
+        <p>Created by Your Name &copy; 2025</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenozoic Era</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cenozoic Era</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="paleozoic.html">Paleozoic Era</a></li>
+                <li><a href="mesozoic.html">Mesozoic Era</a></li>
+                <li><a href="cenozoic.html">Cenozoic Era</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="era-info">
+        <h2>Life Forms and Geological Features</h2>
+        <p>The Cenozoic Era, from 66 million years ago to the present, is known as the "Age of Mammals." It includes the rise of mammals, birds, and human evolution.</p>
+    </section>
+    <footer>
+        <p>Created by Your Name &copy; 2025</p>
+    </footer>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+section.era-info {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+document.querySelectorAll('.era-info').forEach(section => {
+    section.addEventListener('click', () => {
+        alert("You clicked to learn more about this era!");
+    });
+});
